@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carreras</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="./carrera.css">
+</head>
+
+<body class="min-h-screen bg-gray-100">
+    <header class="h-custom-10 bg-black text-white flex items-center justify-center">
+        <nav class="w-full">
+            <ul class="flex justify-between px-2">
+                <li><a class="text-2xl font-serif " href="#">Carreras de la FCPN</a></li>
+                <li>
+
+                </li>
+            </ul>
+        </nav>
+
+        <div class="relative">
+            <img class="ham w-10 h-10 mr-4 rounded-full cursor-pointer"
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSs3hgwmFJJWAAQN0-RHrtooUL7lYn-kl6e5g&usqp=CAU"
+                alt="login" id="profile-image">
+            <div class="hidden absolute bg-blue-200 mt-3 pt-2 py-2 w-40 right-0 rounded-md shadow-lg flex flex-col"
+                id="config-menu">
+                <!-- Opciones de configuración -->
+                <div class="text-center">
+                    <h1 class="px-4 py-2 text-2xl text-gray-800 flex-grow">Datos del usuario</h1>
+                    <div class="">
+                        <h2 class="text-2xl  hover:bg-blue-400 flex-grow text-gray-800" id="user-currently1"></h2>
+                        <h2 class="text-2xl  hover:bg-blue-400 flex-grow text-gray-800" id="user-currently2"></h2>
+                        <div class="flex justify-center mt-7">
+                            <a class="w-16 h-16  mx-5 " href="#">
+                                <img class=" hover:bg-green-400" src="../../../assets/image/edit_profile.png"
+                                    alt="editar perfil">
+                            </a>
+                            <a onclick="logOut()" class="w-16 h-16  mx-5 " href="">
+                                <img class=" hover:bg-red-400" src="../../../assets/image/output.png"
+                                    alt="cierre de sesion">
+
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+                <!-- <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-blue-400 flex-grow">Configuración 1</a>
+                    <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-blue-400 flex-grow">Configuración 2</a>
+                    <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-blue-400 flex-grow">Configuración 3</a> -->
+            </div>
+        </div>
+
+    </header>
+
+
+    <section class="h-custom-90 plomo flex justify-center items-center">
+        <div>
+            <h1 class="text-center text-3xl text-gray-800 font-serif mb-4">Elige una unidad carrera!!</h1>
+            <div class="text-center mb-2">
+                <button class="azul w-72 h-12 text-2xl text-gray-100"
+                onclick="carreraInfo()"
+                >Carreras de Informatica</button>
+            </div>
+            <div class="text-center mb-2 ">
+                <button class="azul w-72 text-2xl h-12 text-gray-100"
+                onclick="direccionEsta()"
+                >Direccion de Estadistica</button>
+            </div>
+            <div class="text-center mb-2">
+                <button class="azul w-72 h-12 text-2xl text-gray-100"
+                onclick="carreraMate()"
+                >Direccion de Matematica</button>
+            </div>
+        </div>
+    </section>
+
+
+    <style>
+        /* Estilos personalizados para las alturas */
+        .plomo {
+            background-color: #4A5261;
+        }
+
+        .azul {
+            background-color: #274690;
+        }
+
+        .h-custom-10 {
+            height: 10vh;
+        }
+
+        .h-custom-90 {
+            height: 90vh;
+        }
+    </style>
+    <script src="./carrera.js"></script>
+</body>
+
+</html>
